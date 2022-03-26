@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useMemo, useState } from "react";
 import PropTypes from "prop-types";
 import { FaStar } from "react-icons/fa";
