@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useMemo, useState } from "react";
 import PropTypes from "prop-types";
 import { FaStar } from "react-icons/fa";
@@ -6,17 +5,16 @@ import { FaStar } from "react-icons/fa";
 const Rate = ({ count, rating, color, onRating }) => {
 	const [hoverRating, setHoverRating] = useState(0);
 
-	const getColor = (index) => {
-		if (hoverRating >= index) {
-			return color.filled;
-		} else if (!hoverRating && rating >= index) {
-			return color.filled;
-		}
-
-		return color.unfilled;
-	};
-
 	const starRating = useMemo(() => {
+		const getColor = (index) => {
+			if (hoverRating >= index) {
+				return color.filled;
+			} else if (!hoverRating && rating >= index) {
+				return color.filled;
+			}
+
+			return color.unfilled;
+		};
 		return Array(count)
 			.fill(0)
 			.map((_, i) => i + 1)
@@ -31,7 +29,7 @@ const Rate = ({ count, rating, color, onRating }) => {
 					onMouseLeave={() => setHoverRating(0)}
 				/>
 			));
-	}, [count, rating, hoverRating]);
+	}, [color.filled, color.unfilled, count, hoverRating, onRating, rating]);
 
 	return <div>{starRating}</div>;
 };
