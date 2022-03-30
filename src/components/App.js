@@ -29,7 +29,6 @@ const App = () => {
 	}
 
 	const resetStars = (event) => {
-		console.log("hi");
 		setAttainmentRating(0);
 		setInvolementRating(0);
 		setExperimentRating(0);
