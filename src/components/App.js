@@ -46,7 +46,7 @@ const App = () => {
 				setCopyButton("Copied! 😃");
 				setTimeout(function () {
 					setCopyButton("Copy to Clipboard");
-				}, 1000);
+				}, 1010);
 			});
 	};
 	return (
