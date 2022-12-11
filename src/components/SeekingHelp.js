@@ -5,7 +5,7 @@ const SeekingHelp = ({ helpSeekingRating, name, pronoun }) => {
 		case 1:
 			return `${name} would benefit by asking more questions during lessons to clarify ${pronoun[2]} understanding of more complex topics rather than carrying forward misconceptions into future classes. `;
 		case 2:
-			return `${name} will occasionally ask questions in lessons, but needs to enhance this positive behaviour by seeking additional support, either by asking more questions or seeking help outside of class to clarify any misconceptions. `;
+			return `${name} occasionally asks questions in lessons, but needs to enhance this positive behaviour by seeking additional support, either by asking more questions or seeking help outside of class to clarify any misconceptions. `;
 		case 3:
 			return `${
 				pronoun[0][0].toUpperCase() + pronoun[0].substring(1)
