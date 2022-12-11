@@ -11,7 +11,7 @@ const Involvement = ({ involementRating, name, pronoun }) => {
 		case 4:
 			return `In lessons, ${pronoun[0]} frequently contributes to class discussions and will regularly ask questions to develop a better understanding. `;
 		case 5:
-			return `In lessons, ${pronoun[0]} is a frequent contributor of thoughtful and well-considered responses to questions. `;
+			return `In lessons, ${pronoun[0]} frequently contributes thoughtful and well-considered responses to questions. `;
 		default:
 			return "";
 	}
