@@ -9,7 +9,7 @@ const Involvement = ({ involementRating, name, pronoun }) => {
 		case 3:
 			return ` In lessons, ${pronoun[0]} is good-humoured and makes frequent contributions to class discussions but hesitates to ask questions to clarify ${pronoun[2]} understanding. `;
 		case 4:
-			return `In lessons, ${pronoun[0]} makes frequent contributions to class discussions and will regularly ask questions to develop a better understanding. `;
+			return `In lessons, ${pronoun[0]} frequently contributes to class discussions and will regularly ask questions to develop a better understanding. `;
 		case 5:
 			return `In lessons, ${pronoun[0]} is a frequent contributor of thoughtful and well-considered responses to questions. `;
 		default:
